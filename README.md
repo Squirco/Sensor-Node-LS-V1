@@ -7,7 +7,7 @@ https://hackaday.io/project/3321-squirco-smart-home-system-sensor-network
 * **/Hardware-Main** - Eagle design files for the Logic and Power Supply boards (.sch and .brd)
 * **/Hardware-Addon** - Eagle design files for the button, sensor, and programming adaptor boards (.sch and .brd)
 * **/Hardware-3D** - 3D files for the enclosure. Designed to be 3D printed, tested with Form1+ and Shapeways/Sculpteo
-* **/Hardware-Extras** - Contains parts list and other documents
+* **/Hardware-Extras** - Contains BOM and other documents
   
 #License Information
 The hardware is released under <a href = "https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>  
