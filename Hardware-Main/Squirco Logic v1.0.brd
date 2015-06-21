@@ -1404,15 +1404,15 @@ Please make sure your boards conform to these design rules.</description>
 <element name="B1" library="Pinoccio2" package="BALUN-2-4GHZ" value="BALUN0805" x="15.5" y="44.5" smashed="yes" rot="R270"/>
 <element name="R1" library="adafruit" package="R0402" value="0R" x="14.85" y="49" smashed="yes" rot="R270"/>
 <element name="R2" library="adafruit" package="R0402" value="DNI" x="15.5" y="51.25" smashed="yes" rot="R180"/>
-<element name="U$1" library="DF007" package="DN007+5" value="INVERTED_F_ANTENNA+5" x="14.85" y="52.5"/>
+<element name="ANT2" library="DF007" package="DN007+5" value="INVERTED_F_ANTENNA+5" x="14.85" y="52.5"/>
 <element name="R7" library="adafruit" package="R0402" value="NTC" x="23.5" y="46" smashed="yes" rot="R90"/>
 <element name="R8" library="adafruit" package="R0603" value="4k7" x="26.75" y="46.5" smashed="yes" rot="R180"/>
 <element name="ANT1" library="adafruit" package="RN-ANT" value="ANTENNA" x="5.25" y="15.35" rot="R180"/>
-<element name="U$2" library="ST-CC254X" package="RHA_S-PVQFN-N40" value="CC2541" x="18" y="16" smashed="yes" rot="R180"/>
+<element name="U4" library="ST-CC254X" package="RHA_S-PVQFN-N40" value="CC2541" x="18" y="16" smashed="yes" rot="R180"/>
 <element name="C5" library="SparkFun-Capacitors" package="0603-CAP" value="2.2uF" x="23.75" y="18.25" smashed="yes"/>
 <element name="C7" library="SparkFun-Capacitors" package="0603-CAP" value="1uF" x="22.75" y="12.25" smashed="yes"/>
 <element name="R9" library="adafruit" package="R0603" value="56k" x="13.75" y="11" smashed="yes" rot="R90"/>
-<element name="U$3" library="Pinoccio2" package="BALUN-2-4GHZ" value="BALUN0805" x="12.5" y="16" smashed="yes"/>
+<element name="B2" library="Pinoccio2" package="BALUN-2-4GHZ" value="BALUN0805" x="12.5" y="16" smashed="yes"/>
 <element name="R12" library="adafruit" package="R0402" value="0R" x="8.25" y="15.35" smashed="yes" rot="R180"/>
 <element name="R13" library="adafruit" package="R0402" value="DNI" x="6.25" y="16" smashed="yes" rot="R270"/>
 <element name="Y3" library="ABRACON" package="ABS07" value="32.768kHz" x="16.5" y="10.25" smashed="yes" rot="R180"/>
@@ -1476,7 +1476,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="U$23" library="pinhead-half" package="S01C-4MM" value="S01C-4MM" x="34.5" y="36.5" rot="R180"/>
 <element name="U$33" library="pinhead-half" package="S01-4MM" value="S01-4MM" x="34.5" y="35" rot="R180"/>
 <element name="U$34" library="pinhead-half" package="S01C-4MM" value="S01C-4MM" x="34.5" y="33.5" rot="MR0"/>
-<element name="C4" library="SparkFun-Capacitors" package="0603-CAP" value="" x="27.75" y="40" smashed="yes" rot="R270">
+<element name="C4" library="SparkFun-Capacitors" package="0603-CAP" value="DNI" x="27.75" y="40" smashed="yes" rot="R270">
 <attribute name="VALUE" x="26.607" y="41.016" size="0.4064" layer="27" font="vector" rot="R270"/>
 </element>
 </elements>
@@ -1517,16 +1517,16 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="38.25" y="-1"/>
 <vertex x="38" y="52.5"/>
 </polygon>
-<contactref element="U$1" pad="GND@1"/>
-<contactref element="U$1" pad="GND"/>
+<contactref element="ANT2" pad="GND@1"/>
+<contactref element="ANT2" pad="GND"/>
 <contactref element="R8" pad="1"/>
 <contactref element="ANT1" pad="GND"/>
 <contactref element="C5" pad="2"/>
 <contactref element="C7" pad="2"/>
 <contactref element="R9" pad="1"/>
-<contactref element="U$3" pad="2"/>
-<contactref element="U$3" pad="5"/>
-<contactref element="U$3" pad="6"/>
+<contactref element="B2" pad="2"/>
+<contactref element="B2" pad="5"/>
+<contactref element="B2" pad="6"/>
 <contactref element="R13" pad="1"/>
 <contactref element="C12" pad="2"/>
 <contactref element="C8" pad="2"/>
@@ -1534,7 +1534,7 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="C13" pad="2"/>
 <contactref element="Y4" pad="P$2"/>
 <contactref element="Y4" pad="P$4"/>
-<contactref element="U$2" pad="EXP"/>
+<contactref element="U4" pad="EXP"/>
 <contactref element="C16" pad="1"/>
 <contactref element="R10" pad="1"/>
 <contactref element="R11" pad="1"/>
@@ -1932,7 +1932,7 @@ Please make sure your boards conform to these design rules.</description>
 <via x="7" y="11" extent="1-16" drill="0.3"/>
 <via x="4" y="43" extent="1-16" drill="0.3"/>
 <via x="6" y="43" extent="1-16" drill="0.3"/>
-<contactref element="U$2" pad="1"/>
+<contactref element="U4" pad="1"/>
 <contactref element="U$6" pad="1"/>
 <contactref element="U$33" pad="P$1"/>
 <wire x1="23" y1="36.5" x2="24.775" y2="37.65" width="0" layer="19" extent="1-1"/>
@@ -2086,12 +2086,12 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="RX0">
 <contactref element="U3" pad="46"/>
-<contactref element="U$2" pad="15"/>
+<contactref element="U4" pad="15"/>
 <wire x1="18.25" y1="33.25" x2="18.25" y2="19" width="0.25" layer="1"/>
 </signal>
 <signal name="TX0">
 <contactref element="U3" pad="47"/>
-<contactref element="U$2" pad="14"/>
+<contactref element="U4" pad="14"/>
 <wire x1="18.75" y1="33.25" x2="18.75" y2="19" width="0.25" layer="1"/>
 </signal>
 <signal name="3.3V">
@@ -2102,14 +2102,14 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="U3" pad="44"/>
 <contactref element="C9" pad="1"/>
 <contactref element="R7" pad="1"/>
-<contactref element="U$2" pad="39"/>
-<contactref element="U$2" pad="10"/>
-<contactref element="U$2" pad="28"/>
-<contactref element="U$2" pad="27"/>
-<contactref element="U$2" pad="24"/>
-<contactref element="U$2" pad="29"/>
-<contactref element="U$2" pad="21"/>
-<contactref element="U$2" pad="31"/>
+<contactref element="U4" pad="39"/>
+<contactref element="U4" pad="10"/>
+<contactref element="U4" pad="28"/>
+<contactref element="U4" pad="27"/>
+<contactref element="U4" pad="24"/>
+<contactref element="U4" pad="29"/>
+<contactref element="U4" pad="21"/>
+<contactref element="U4" pad="31"/>
 <contactref element="C5" pad="1"/>
 <contactref element="R14" pad="2"/>
 <wire x1="15" y1="14.25" x2="15" y2="14.75" width="0.254" layer="1"/>
@@ -2237,7 +2237,7 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="N$5">
 <contactref element="R1" pad="1"/>
-<contactref element="U$1" pad="FEED"/>
+<contactref element="ANT2" pad="FEED"/>
 <contactref element="R2" pad="2"/>
 <wire x1="14.85" y1="51.25" x2="14.85" y2="49.65" width="0.45" layer="1"/>
 <wire x1="14.8475" y1="53.002" x2="14.85" y2="53.002" width="0.4064" layer="1"/>
@@ -2296,39 +2296,39 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="21.6" y1="6.35" x2="22.25" y2="7" width="0.2" layer="1"/>
 </signal>
 <signal name="N/C">
-<contactref element="U$2" pad="4"/>
+<contactref element="U4" pad="4"/>
 </signal>
 <signal name="N$7">
 <contactref element="C7" pad="1"/>
-<contactref element="U$2" pad="40"/>
+<contactref element="U4" pad="40"/>
 <wire x1="21.9" y1="12.25" x2="20.5" y2="12.25" width="0.2" layer="1"/>
 <wire x1="20.5" y1="12.25" x2="20.25" y2="12.5" width="0.2" layer="1"/>
 <wire x1="20.25" y1="12.5" x2="20.25" y2="13" width="0.2" layer="1"/>
 </signal>
 <signal name="N$11">
 <contactref element="R9" pad="2"/>
-<contactref element="U$2" pad="30"/>
+<contactref element="U4" pad="30"/>
 <wire x1="13.75" y1="11.85" x2="13.75" y2="13.25" width="0.2" layer="1"/>
 <wire x1="13.75" y1="13.25" x2="14.25" y2="13.75" width="0.2" layer="1"/>
 <wire x1="14.25" y1="13.75" x2="15" y2="13.75" width="0.2" layer="1"/>
 </signal>
 <signal name="CC_RFP">
-<contactref element="U$2" pad="25"/>
-<contactref element="U$3" pad="4"/>
+<contactref element="U4" pad="25"/>
+<contactref element="B2" pad="4"/>
 <wire x1="13.15" y1="16.9" x2="13.15" y2="16.6" width="0.25" layer="1"/>
 <wire x1="13.15" y1="16.6" x2="13.5" y2="16.25" width="0.25" layer="1" curve="90"/>
 <wire x1="13.5" y1="16.25" x2="15" y2="16.25" width="0.25" layer="1"/>
 </signal>
 <signal name="CC_RFN">
-<contactref element="U$2" pad="26"/>
-<contactref element="U$3" pad="3"/>
+<contactref element="U4" pad="26"/>
+<contactref element="B2" pad="3"/>
 <wire x1="13.15" y1="15.1" x2="13.15" y2="15.4" width="0.25" layer="1"/>
 <wire x1="13.15" y1="15.4" x2="13.5" y2="15.75" width="0.25" layer="1" curve="-90"/>
 <wire x1="13.5" y1="15.75" x2="15" y2="15.75" width="0.25" layer="1"/>
 </signal>
 <signal name="N$14">
 <contactref element="R12" pad="1"/>
-<contactref element="U$3" pad="1"/>
+<contactref element="B2" pad="1"/>
 <contactref element="R11" pad="2"/>
 <wire x1="8.9" y1="15.35" x2="10.25" y2="15.35" width="0.5" layer="1"/>
 <wire x1="10.25" y1="15.35" x2="11.85" y2="15.35" width="0.25" layer="1"/>
@@ -2342,7 +2342,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="6.25" y1="15.35" x2="7.6" y2="15.35" width="0.5" layer="1"/>
 </signal>
 <signal name="N$19">
-<contactref element="U$2" pad="32"/>
+<contactref element="U4" pad="32"/>
 <contactref element="C8" pad="1"/>
 <contactref element="Y3" pad="2"/>
 <wire x1="16.25" y1="13" x2="16.25" y2="10.75" width="0.2" layer="1"/>
@@ -2353,7 +2353,7 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="N$21">
 <contactref element="Y3" pad="1"/>
-<contactref element="U$2" pad="33"/>
+<contactref element="U4" pad="33"/>
 <contactref element="C12" pad="1"/>
 <wire x1="16.75" y1="13" x2="16.75" y2="10.75" width="0.2" layer="1"/>
 <wire x1="16.75" y1="10.75" x2="17.25" y2="10.25" width="0.2" layer="1"/>
@@ -2364,7 +2364,7 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="N$16">
 <contactref element="C15" pad="1"/>
 <contactref element="Y4" pad="P$1"/>
-<contactref element="U$2" pad="22"/>
+<contactref element="U4" pad="22"/>
 <wire x1="14.25" y1="18" x2="14.5" y2="17.75" width="0.2" layer="1"/>
 <wire x1="14.5" y1="17.75" x2="15" y2="17.75" width="0.2" layer="1"/>
 <wire x1="14.25" y1="18" x2="14.25" y2="20.25" width="0.2" layer="1"/>
@@ -2379,7 +2379,7 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="N$18">
 <contactref element="Y4" pad="P$3"/>
 <contactref element="C13" pad="1"/>
-<contactref element="U$2" pad="23"/>
+<contactref element="U4" pad="23"/>
 <wire x1="15" y1="17.25" x2="14.5" y2="17.25" width="0.2" layer="1"/>
 <wire x1="14.5" y1="17.25" x2="13.5" y2="18.25" width="0.2" layer="1"/>
 <wire x1="13.5" y1="18.25" x2="12" y2="18.25" width="0.2" layer="1"/>
@@ -2390,7 +2390,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="10.025" y1="19.075" x2="10" y2="19.1" width="0.2" layer="1"/>
 </signal>
 <signal name="DC">
-<contactref element="U$2" pad="34"/>
+<contactref element="U4" pad="34"/>
 <contactref element="U$9" pad="1"/>
 <wire x1="17.25" y1="13" x2="17.25" y2="12" width="0.2" layer="1"/>
 <wire x1="17.25" y1="12" x2="17.75" y2="11.5" width="0.2" layer="1"/>
@@ -2403,7 +2403,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="30.75" y1="12.25" x2="34.5" y2="12.25" width="0.2" layer="16"/>
 </signal>
 <signal name="DD">
-<contactref element="U$2" pad="35"/>
+<contactref element="U4" pad="35"/>
 <contactref element="U$9" pad="2"/>
 <wire x1="17.75" y1="13" x2="17.75" y2="12.25" width="0.2" layer="1"/>
 <wire x1="17.75" y1="12.25" x2="18" y2="12" width="0.2" layer="1"/>
@@ -2433,7 +2433,7 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="N$23">
 </signal>
 <signal name="N$24">
-<contactref element="U$2" pad="20"/>
+<contactref element="U4" pad="20"/>
 <contactref element="R15" pad="1"/>
 <wire x1="15.75" y1="19" x2="15.75" y2="20.4" width="0.2" layer="1"/>
 </signal>
