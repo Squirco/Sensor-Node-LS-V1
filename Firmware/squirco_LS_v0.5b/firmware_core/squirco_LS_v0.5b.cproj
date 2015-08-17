@@ -1,0 +1,430 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>6.2</ProjectVersion>
+    <ToolchainName>com.Atmel.AVRGCC8.C</ToolchainName>
+    <ProjectGuid>{169f8578-a47d-4d67-8fb1-e42b2fddfe09}</ProjectGuid>
+    <avrdevice>ATmega256RFR2</avrdevice>
+    <avrdeviceseries>mega</avrdeviceseries>
+    <OutputType>Executable</OutputType>
+    <Language>C</Language>
+    <OutputFileName>$(MSBuildProjectName)</OutputFileName>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
+    <AssemblyName>L1_firmware_v0.32</AssemblyName>
+    <Name>squirco_LS_v0.5b</Name>
+    <RootNamespace>L1_firmware_v0.32</RootNamespace>
+    <ToolchainFlavour>Native</ToolchainFlavour>
+    <KeepTimersRunning>true</KeepTimersRunning>
+    <OverrideVtor>false</OverrideVtor>
+    <CacheFlash>true</CacheFlash>
+    <ProgFlashFromRam>true</ProgFlashFromRam>
+    <RamSnippetAddress>0x20000000</RamSnippetAddress>
+    <UncachedRange />
+    <OverrideVtorValue>exception_table</OverrideVtorValue>
+    <BootSegment>2</BootSegment>
+    <eraseonlaunchrule>0</eraseonlaunchrule>
+    <AsfFrameworkConfig>
+      <framework-data>
+        <options>
+          <option id="common.boards" value="Add" config="" content-id="Atmel.ASF" />
+        </options>
+        <configurations />
+        <files>
+          <file path="src/main.c" framework="" version="" source="common/applications/user_application/main.c" changed="False" content-id="Atmel.ASF" />
+          <file path="src/config/conf_board.h" framework="" version="" source="common/applications/user_application/user_board/config/conf_board.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/common/boards/board.h" framework="" version="" source="common/boards/board.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/common/boards/user_board/init.c" framework="" version="" source="common/boards/user_board/init.c" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/common/boards/user_board/user_board.h" framework="" version="" source="common/boards/user_board/user_board.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/common/utils/interrupt.h" framework="" version="" source="common/utils/interrupt.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/common/utils/interrupt/interrupt_avr8.h" framework="" version="" source="common/utils/interrupt/interrupt_avr8.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/common/utils/make/Makefile.avr.in" framework="" version="" source="common/utils/make/Makefile.avr.in" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/common/utils/parts.h" framework="" version="" source="common/utils/parts.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/mega/utils/assembler.h" framework="" version="" source="mega/utils/assembler.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/mega/utils/assembler/gas.h" framework="" version="" source="mega/utils/assembler/gas.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/mega/utils/compiler.h" framework="" version="" source="mega/utils/compiler.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/mega/utils/preprocessor/mrepeat.h" framework="" version="" source="mega/utils/preprocessor/mrepeat.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/mega/utils/preprocessor/preprocessor.h" framework="" version="" source="mega/utils/preprocessor/preprocessor.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/mega/utils/preprocessor/stringz.h" framework="" version="" source="mega/utils/preprocessor/stringz.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/mega/utils/preprocessor/tpaste.h" framework="" version="" source="mega/utils/preprocessor/tpaste.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/mega/utils/progmem.h" framework="" version="" source="mega/utils/progmem.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/mega/utils/status_codes.h" framework="" version="" source="mega/utils/status_codes.h" changed="False" content-id="Atmel.ASF" />
+        </files>
+        <documentation help="http://asf.atmel.com/docs/3.16.0/common.applications.user_application.user_board.megarf/html/index.html" />
+        <offline-documentation help="" />
+        <dependencies>
+          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.16.0" />
+        </dependencies>
+        <project id="common.applications.user_application.user_board.megarf" value="Add" config="" content-id="Atmel.ASF" />
+        <board id="board.user_board.megarf" value="Add" config="" content-id="Atmel.ASF" />
+      </framework-data>
+    </AsfFrameworkConfig>
+    <avrtool>com.atmel.avrdbg.tool.avrdragon</avrtool>
+    <avrtoolinterface>ISP</avrtoolinterface>
+    <com_atmel_avrdbg_tool_edbg>
+      <ToolOptions>
+        <InterfaceProperties>
+          <JtagEnableExtResetOnStartSession>true</JtagEnableExtResetOnStartSession>
+          <JtagDbgClock>220000</JtagDbgClock>
+          <JtagInChain>false</JtagInChain>
+          <JtagDevicesBefore>0</JtagDevicesBefore>
+          <JtagDevicesAfter>0</JtagDevicesAfter>
+          <JtagInstrBitsBefore>0</JtagInstrBitsBefore>
+          <JtagInstrBitsAfter>0</JtagInstrBitsAfter>
+          <JtagSelectedDeviceIndexInChain>
+          </JtagSelectedDeviceIndexInChain>
+          <JtagDaisyChainDevices>
+          </JtagDaisyChainDevices>
+        </InterfaceProperties>
+        <InterfaceName>JTAG</InterfaceName>
+      </ToolOptions>
+      <ToolType>com.atmel.avrdbg.tool.edbg</ToolType>
+      <ToolNumber>ATML1784030200000948</ToolNumber>
+      <ToolName>EDBG</ToolName>
+    </com_atmel_avrdbg_tool_edbg>
+    <com_atmel_avrdbg_tool_avrdragon>
+      <ToolOptions>
+        <InterfaceProperties>
+          <JtagEnableExtResetOnStartSession>false</JtagEnableExtResetOnStartSession>
+          <JtagDbgClock>500000</JtagDbgClock>
+          <IspClock>250000</IspClock>
+          <JtagInChain>false</JtagInChain>
+          <JtagDevicesBefore>0</JtagDevicesBefore>
+          <JtagDevicesAfter>0</JtagDevicesAfter>
+          <JtagInstrBitsBefore>0</JtagInstrBitsBefore>
+          <JtagInstrBitsAfter>0</JtagInstrBitsAfter>
+          <JtagSelectedDeviceIndexInChain>
+          </JtagSelectedDeviceIndexInChain>
+          <JtagDaisyChainDevices>
+          </JtagDaisyChainDevices>
+        </InterfaceProperties>
+        <InterfaceName>ISP</InterfaceName>
+      </ToolOptions>
+      <ToolType>com.atmel.avrdbg.tool.avrdragon</ToolType>
+      <ToolNumber>00A200043377</ToolNumber>
+      <ToolName>AVR Dragon</ToolName>
+    </com_atmel_avrdbg_tool_avrdragon>
+    <preserveEEPROM>True</preserveEEPROM>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <ToolchainSettings>
+      <AvrGcc>
+        <avrgcc.common.optimization.RelaxBranches>True</avrgcc.common.optimization.RelaxBranches>
+        <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+        <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+        <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+        <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+        <avrgcc.common.outputfiles.usersignatures>False</avrgcc.common.outputfiles.usersignatures>
+        <avrgcc.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>NDEBUG</Value>
+            <Value>BOARD=USER_BOARD</Value>
+          </ListValues>
+        </avrgcc.compiler.symbols.DefSymbols>
+        <avrgcc.compiler.directories.IncludePaths>
+          <ListValues>
+            <Value>../common/applications/user_application/user_board/config</Value>
+            <Value>../src/config</Value>
+            <Value>../src/ASF/common/boards</Value>
+            <Value>../src/ASF/mega/utils</Value>
+            <Value>../src/ASF/common/utils</Value>
+            <Value>../src/ASF/mega/utils/preprocessor</Value>
+            <Value>../src</Value>
+            <Value>../src/ASF/common/boards/user_board</Value>
+          </ListValues>
+        </avrgcc.compiler.directories.IncludePaths>
+        <avrgcc.compiler.optimization.level>Optimize for size (-Os)</avrgcc.compiler.optimization.level>
+        <avrgcc.compiler.optimization.OtherFlags>-fdata-sections</avrgcc.compiler.optimization.OtherFlags>
+        <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+        <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+        <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+        <avrgcc.compiler.miscellaneous.OtherFlags>-std=gnu99 -fno-strict-aliasing -Wstrict-prototypes -Wmissing-prototypes -Werror-implicit-function-declaration -Wpointer-arith -mrelax</avrgcc.compiler.miscellaneous.OtherFlags>
+        <avrgcc.linker.libraries.Libraries>
+          <ListValues>
+            <Value>libm</Value>
+          </ListValues>
+        </avrgcc.linker.libraries.Libraries>
+        <avrgcc.linker.miscellaneous.LinkerFlags>-Wl,--relax</avrgcc.linker.miscellaneous.LinkerFlags>
+        <avrgcc.assembler.general.AssemblerFlags>-mrelax -DBOARD=USER_BOARD</avrgcc.assembler.general.AssemblerFlags>
+        <avrgcc.assembler.general.IncludePaths>
+          <ListValues>
+            <Value>../common/applications/user_application/user_board/config</Value>
+            <Value>../src/config</Value>
+            <Value>../src/ASF/common/boards</Value>
+            <Value>../src/ASF/mega/utils</Value>
+            <Value>../src/ASF/common/utils</Value>
+            <Value>../src/ASF/mega/utils/preprocessor</Value>
+            <Value>../src</Value>
+            <Value>../src/ASF/common/boards/user_board</Value>
+          </ListValues>
+        </avrgcc.assembler.general.IncludePaths>
+      </AvrGcc>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <ToolchainSettings>
+      <AvrGcc>
+        <avrgcc.common.optimization.RelaxBranches>True</avrgcc.common.optimization.RelaxBranches>
+        <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+        <avrgcc.common.outputfiles.lss>False</avrgcc.common.outputfiles.lss>
+        <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+        <avrgcc.common.outputfiles.srec>False</avrgcc.common.outputfiles.srec>
+        <avrgcc.common.outputfiles.usersignatures>False</avrgcc.common.outputfiles.usersignatures>
+        <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+        <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+        <avrgcc.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>DEBUG</Value>
+            <Value>BOARD=USER_BOARD</Value>
+            <Value>PHY_ATMEGARFR2</Value>
+            <Value>HAL_ATMEGA256RFR2</Value>
+            <Value>F_CPU=16000000</Value>
+            <Value>PLATFORM_XPLAINED_PRO_ATMEGA256RFR2</Value>
+          </ListValues>
+        </avrgcc.compiler.symbols.DefSymbols>
+        <avrgcc.compiler.directories.IncludePaths>
+          <ListValues>
+            <Value>../common/applications/user_application/user_board/config</Value>
+            <Value>../src/config</Value>
+            <Value>../src/ASF/common/boards</Value>
+            <Value>../src/ASF/mega/utils</Value>
+            <Value>../src/ASF/common/utils</Value>
+            <Value>../src/ASF/mega/utils/preprocessor</Value>
+            <Value>../src</Value>
+            <Value>../src/ASF/common/boards/user_board</Value>
+            <Value>../src/lwMesh/hal/atmega256rfr2/inc</Value>
+            <Value>../src/lwMesh/phy/atmegarfr2/inc</Value>
+            <Value>../src/lwMesh/nwk/inc</Value>
+            <Value>../src/lwMesh/sys/inc</Value>
+            <Value>../src/lwMesh/hal/drivers/atmega256rfr2</Value>
+          </ListValues>
+        </avrgcc.compiler.directories.IncludePaths>
+        <avrgcc.compiler.optimization.level>Optimize for size (-Os)</avrgcc.compiler.optimization.level>
+        <avrgcc.compiler.optimization.OtherFlags>-fdata-sections</avrgcc.compiler.optimization.OtherFlags>
+        <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+        <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+        <avrgcc.compiler.optimization.DebugLevel>Maximum (-g3)</avrgcc.compiler.optimization.DebugLevel>
+        <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+        <avrgcc.compiler.miscellaneous.OtherFlags>-std=gnu99 -fno-strict-aliasing -Wstrict-prototypes -Wmissing-prototypes -Werror-implicit-function-declaration -Wpointer-arith -mrelax</avrgcc.compiler.miscellaneous.OtherFlags>
+        <avrgcc.linker.libraries.Libraries>
+          <ListValues>
+            <Value>libm</Value>
+          </ListValues>
+        </avrgcc.linker.libraries.Libraries>
+        <avrgcc.linker.miscellaneous.LinkerFlags>-Wl,--relax</avrgcc.linker.miscellaneous.LinkerFlags>
+        <avrgcc.assembler.general.AssemblerFlags>-mrelax -DBOARD=USER_BOARD</avrgcc.assembler.general.AssemblerFlags>
+        <avrgcc.assembler.general.IncludePaths>
+          <ListValues>
+            <Value>../common/applications/user_application/user_board/config</Value>
+            <Value>../src/config</Value>
+            <Value>../src/ASF/common/boards</Value>
+            <Value>../src/ASF/mega/utils</Value>
+            <Value>../src/ASF/common/utils</Value>
+            <Value>../src/ASF/mega/utils/preprocessor</Value>
+            <Value>../src</Value>
+            <Value>../src/ASF/common/boards/user_board</Value>
+            <Value>../src/lwMesh/hal/atmega256rfr2/inc</Value>
+            <Value>../src/lwMesh/phy/atmegarfr2/inc</Value>
+            <Value>../src/lwMesh/nwk/inc</Value>
+            <Value>../src/lwMesh/sys/inc</Value>
+            <Value>../src/lwMesh/hal/drivers/atmega256rfr2</Value>
+          </ListValues>
+        </avrgcc.assembler.general.IncludePaths>
+        <avrgcc.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcc.assembler.debugging.DebugLevel>
+      </AvrGcc>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="src\" />
+    <Folder Include="src\config\" />
+    <Folder Include="src\lwMesh\" />
+    <Folder Include="src\lwMesh\hal\" />
+    <Folder Include="src\lwMesh\hal\atmega256rfr2\" />
+    <Folder Include="src\lwMesh\hal\atmega256rfr2\inc\" />
+    <Folder Include="src\lwMesh\hal\atmega256rfr2\src\" />
+    <Folder Include="src\lwMesh\hal\drivers\" />
+    <Folder Include="src\lwMesh\hal\drivers\atmega256rfr2\" />
+    <Folder Include="src\lwMesh\nwk\" />
+    <Folder Include="src\lwMesh\nwk\inc\" />
+    <Folder Include="src\lwMesh\nwk\src\" />
+    <Folder Include="src\lwMesh\phy\" />
+    <Folder Include="src\lwMesh\phy\atmegarfr2\" />
+    <Folder Include="src\lwMesh\phy\atmegarfr2\inc\" />
+    <Folder Include="src\lwMesh\phy\atmegarfr2\src\" />
+    <Folder Include="src\lwMesh\sys\" />
+    <Folder Include="src\lwMesh\sys\inc\" />
+    <Folder Include="src\lwMesh\sys\src\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="src\adc_lut.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\adc_lut.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\commands.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\commands.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\globalDefs.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\LSButton.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\LSButton.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\main.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\sensors.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\sensors.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\Adc.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\Adc.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <None Include="src\config\conf_board.h">
+      <SubType>compile</SubType>
+    </None>
+    <Compile Include="src\config.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\lwMesh\hal\atmega256rfr2\inc\hal.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\lwMesh\hal\atmega256rfr2\inc\halGpio.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\lwMesh\hal\atmega256rfr2\inc\halTimer.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\lwMesh\hal\atmega256rfr2\src\hal.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\lwMesh\hal\atmega256rfr2\src\halTimer.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\lwMesh\hal\drivers\atmega256rfr2\halBoard.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\lwMesh\hal\drivers\atmega256rfr2\halLed.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\lwMesh\hal\drivers\atmega256rfr2\halSleep.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\lwMesh\hal\drivers\atmega256rfr2\halSleep.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\lwMesh\hal\drivers\atmega256rfr2\halUart.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\lwMesh\hal\drivers\atmega256rfr2\halUart.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\lwMesh\nwk\inc\nwk.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\lwMesh\nwk\inc\nwkCommand.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\lwMesh\nwk\inc\nwkDataReq.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\lwMesh\nwk\inc\nwkFrame.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\lwMesh\nwk\inc\nwkGroup.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\lwMesh\nwk\inc\nwkRoute.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\lwMesh\nwk\inc\nwkRouteDiscovery.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\lwMesh\nwk\inc\nwkRx.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\lwMesh\nwk\inc\nwkSecurity.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\lwMesh\nwk\inc\nwkTx.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\lwMesh\nwk\src\nwk.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\lwMesh\nwk\src\nwkDataReq.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\lwMesh\nwk\src\nwkFrame.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\lwMesh\nwk\src\nwkGroup.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\lwMesh\nwk\src\nwkRoute.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\lwMesh\nwk\src\nwkRouteDiscovery.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\lwMesh\nwk\src\nwkRx.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\lwMesh\nwk\src\nwkSecurity.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\lwMesh\nwk\src\nwkTx.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\lwMesh\phy\atmegarfr2\inc\atmegarfr2.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\lwMesh\phy\atmegarfr2\inc\phy.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\lwMesh\phy\atmegarfr2\src\phy.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\lwMesh\sys\inc\sys.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\lwMesh\sys\inc\sysConfig.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\lwMesh\sys\inc\sysEncrypt.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\lwMesh\sys\inc\sysTimer.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\lwMesh\sys\inc\sysTypes.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\lwMesh\sys\src\sys.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\lwMesh\sys\src\sysEncrypt.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\lwMesh\sys\src\sysTimer.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\main.c">
+      <SubType>compile</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
+</Project>
